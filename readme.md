@@ -49,13 +49,30 @@ Para rodar o projeto em ambiente local, siga os passos abaixo:
     git clone https://github.com/fmrodrigues92/kenlo-usuarios-api
     git clone https://github.com/fmrodrigues92/kenlo-chatgpt-api
     ```
+2. Configure o ambiente para a API ChatGPT:
+    - Navegue até o diretório da API ChatGPT:
+      ```bash
+      cd kenlo-chatgpt-api
+      ```
+    - Crie o arquivo `.env` a partir do `.env.example`:
+      ```bash
+      cp .env.example .env
+      ```
+    - Edite o arquivo `.env` e insira a chave da API do ChatGPT:
+      ```bash
+      echo "CHATGPT_KEY=xpto" >> .env
+      ```
+    - Volte para o diretório principal:
+      ```bash
+      cd ..
+      ```
 
-2. Navegue até o diretório do docker-compose:
+3. Navegue até o diretório do docker-compose:
     ```bash
     cd docker-compose
     ```
 
-3. Execute o comando para subir os serviços:
+4. Execute o comando para subir os serviços:
     ```bash
     docker-compose up
     ```
