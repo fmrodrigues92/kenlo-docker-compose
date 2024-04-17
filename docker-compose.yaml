@@ -7,11 +7,11 @@ services:
     volumes:
       - mongo-data:/data/db
 
-  usuarios-api:
+  kenlo-usuarios-api:
     build:
-      context: ../usuarios-api # Caminho até o diretório do usuarios-api
+      context: ../kenlo-usuarios-api # Caminho até o diretório do kenlo-usuarios-api
     volumes:
-      - ../usuarios-api:/app
+      - ../kenlo-usuarios-api:/app
       - /app/node_modules
     ports:
       - "3000:3000"
@@ -20,11 +20,11 @@ services:
     depends_on:
       - mongodb
       
-  chatgpt-api:
+  kenlo-chatgpt-api:
     build:
-      context: ../chatgpt-api # Caminho até o diretório do chatgpt-api
+      context: ../kenlo-chatgpt-api # Caminho até o diretório do kenlo-chatgpt-api
     volumes:
-      - ../chatgpt-api:/app
+      - ../kenlo-chatgpt-api:/app
       - /app/node_modules
     ports:
       - "3001:3000"
