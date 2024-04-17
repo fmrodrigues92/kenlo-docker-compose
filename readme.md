@@ -45,8 +45,9 @@ Para rodar o projeto em ambiente local, siga os passos abaixo:
     ```bash
     mkdir Projeto-fernando
     cd Projeto-fernando
-    git clone <url-repositorio-usuarios-api>
-    git clone <url-repositorio-chatgpt-api>
+    git clone https://github.com/fmrodrigues92/kenlo-docker-compose
+    git clone https://github.com/fmrodrigues92/kenlo-usuarios-api
+    git clone https://github.com/fmrodrigues92/kenlo-chatgpt-api
     ```
 
 2. Navegue até o diretório do docker-compose:
